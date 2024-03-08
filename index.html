@@ -10,66 +10,85 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<section class="hero">
-    <div class="container">
-        <header class="header">
-            <div class="header__left">
-                <a href="#" class="logo header__logo">
-                    <img src="src/images/logo.svg" alt="logo">
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Каталог</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">О нас</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Партнерам</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__right">
-                <div class="header__times">
-                    <div class="header__times-days">ПН-ПТ</div>
-                    <div class="header__times-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_114_230)">
-                            <path d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8C14.6673 4.3181 11.6825 1.33334 8.00065 1.33334C4.31875 1.33334 1.33398 4.3181 1.33398 8C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z" stroke="#757A7A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8 4V8H11" stroke="#757A7A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_114_230">
-                                <rect width="16" height="16" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+<div class="wrapper">
+    <div id="shadow" class="shadow"></div>
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <div class="header__left">
+                    <a href="#" class="logo header__logo">
+                        <img src="src/images/logo.svg" alt="logo">
+                    </a>
+
+                </div>
+                <div id="menu" class="header__right">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Каталог</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">О нас</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Партнерам</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__right-inner">
+                        <div class="header__times">
+                            <div class="header__times-days">ПН-ПТ</div>
+                            <div class="header__times-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_114_230)">
+                                    <path d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8C14.6673 4.3181 11.6825 1.33334 8.00065 1.33334C4.31875 1.33334 1.33398 4.3181 1.33398 8C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z" stroke="#757A7A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 4V8H11" stroke="#757A7A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_114_230">
+                                        <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            </div>
+                            <div class="header__times-clock">9:00 - 18:00</div>
+                        </div>
+                        <div class="header__phone">
+                            <a href="tel:+74951424260" class="header__phone-link">+7 (495) 142-42-60</a>
+                        </div>
                     </div>
-                    <div class="header__times-clock">9:00 - 18:00</div>
+
                 </div>
-                <div class="header__phone">
-                    <a href="tel:+74951424260" class="header__phone-link">+7 (495) 142-42-60</a>
+                <a href="#" id="burger" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </header>
+            <div class="hero__body">
+                <div class="hero__content">
+                    <div class="hero__pre-title">Компания</div>
+                    <h1 class="hero__title">Верокко</h1>
+                    <div class="hero__text">Здесь вы найдете большой ассортимент мармелада, который подойдет каждому любителю сладостей</div>
+                    <div class="hero__action"><button class="hero__button btn">Запросить оптовый прайс</button></div>
+                </div>
+                <div class="hero__image">
+                    <img src="src/images/hero.png" alt="Мармелад">
                 </div>
             </div>
-        </header>
-        <div class="hero__body">
-            <div class="hero__content">
-                <div class="hero__pre-title">Компания</div>
-                <h1 class="hero__title">Верокко</h1>
-                <div class="hero__text">Здесь вы найдете большой ассортимент мармелада, который подойдет каждому любителю сладостей</div>
-                <div class="hero__action"><button class="hero__button">Запросить оптовый прайс</button></div>
-            </div>
-            <div class="hero__image">
-                <img src="src/images/hero.png" alt="Мармелад">
+            <div class="hero__halal">
+                <div class="hero__bears"><img src="src/images/mishkihero.png" alt="Мармелад"></div>
+                <div class="hero__halal-img">
+                    <img src="src/images/halal.png" alt="halal">
+                </div>
+                <div class="hero__halal-text">Наш мармелад одобрен Международным Центром стандартизации и сертификации «Халяль»</div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+</div>
 
 <script src="src/scripts/script.js"></script>
 </body>

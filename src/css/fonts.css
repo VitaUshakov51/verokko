@@ -2,10 +2,10 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 700;
-    src: local("Onest"),
-    url("../fonts/Onest-Bold.ttf") format("ttf"),
-    url("../fonts/Onest-Bold.eot") format("eot"),
-    url("../fonts/Onest-Bold.woff") format("woff"),
+    src: local("Onest");
+    url("../fonts/Onest-Bold.ttf") format("ttf");
+    url("../fonts/Onest-Bold.eot") format("eot");
+    url("../fonts/Onest-Bold.woff") format("woff");
     url("../fonts/Onest-Bold.woff2") format("woff2");
 }
 
@@ -13,7 +13,7 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 600;
-    src: local("Onest"),
+    src: local("Onest");
     url("../fonts/Onest-SemiBold.ttf") format("ttf"),
     url("../fonts/Onest-SemiBold.eot") format("eot"),
     url("../fonts/Onest-SemiBold.woff") format("woff"),
