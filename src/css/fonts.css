@@ -2,7 +2,7 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 700;
-    src: local("Rubik"),
+    src: local("Onest"),
     url("../fonts/Onest-Bold.ttf") format("ttf"),
     url("../fonts/Onest-Bold.eot") format("eot"),
     url("../fonts/Onest-Bold.woff") format("woff"),
@@ -13,7 +13,7 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 600;
-    src: local("Rubik"),
+    src: local("Onest"),
     url("../fonts/Onest-SemiBold.ttf") format("ttf"),
     url("../fonts/Onest-SemiBold.eot") format("eot"),
     url("../fonts/Onest-SemiBold.woff") format("woff"),
@@ -23,7 +23,7 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 500;
-    src: local("Rubik"),
+    src: local("Onest"),
     url("../fonts/Onest-Medium.ttf") format("ttf"),
     url("../fonts/Onest-Medium.eot") format("eot"),
     url("../fonts/Onest-Medium.woff") format("woff"),
@@ -34,7 +34,7 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 400;
-    src: local("Rubik"),
+    src: local("Onest"),
     url("../fonts/Onest-Regular.ttf") format("ttf"),
     url("../fonts/Onest-Regular.eot") format("eot"),
     url("../fonts/Onest-Regular.woff") format("woff"),
@@ -43,7 +43,7 @@
 @font-face {
     font-family: "Ouvality";
     font-style: normal;
-    /*src: local("Rubik"),*/
+    src: local("Ouvality"),
     url("../fonts/Ouvality.ttf") format("ttf"),
     url("../fonts/Ouvality.eot") format("eot"),
     url("../fonts/Ouvality.woff") format("woff"),
