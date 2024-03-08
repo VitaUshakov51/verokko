@@ -12,6 +12,10 @@ body
     overflow-x: hidden;
 }
 
+.wrapper {
+    overflow-x: hidden;
+}
+
 .shadow {
     transition: all .3s;
     pointer-events: none;
