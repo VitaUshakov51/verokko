@@ -16,9 +16,6 @@ body.noScroll {
     overflow: hidden;
 }
 
-.wrapper {
-    overflow-x: hidden;
-}
 
 .shadow {
     transition: all .3s;
@@ -50,6 +47,7 @@ body.noScroll {
     font-family: Onest, sans-serif;
     font-weight: 600;
     font-size: 16px;
+    transition: all .3s;
 }
 
 .hero {
@@ -232,6 +230,11 @@ body.noScroll {
     color: #fff;
 }
 
+.hero__button:hover {
+    background-color: #ffffff;
+    color: #00CEBD;
+}
+
 .hero__halal {
     position: relative;
     margin-top: 209px;
@@ -405,4 +408,224 @@ body.noScroll {
         margin-left: 0;
         margin-top: 10px;
     }
+}
+
+
+/*===================Catalog============================*/
+
+.catalog {
+    padding: 140px 0 74px 0;
+}
+
+.catalog__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__sub-title {
+    position: relative;
+    font-family:Onest, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #131919;
+    z-index: 2;
+    margin-bottom: -8%;
+}
+
+.catalog__title {
+    font-family: Ouvality, sans-serif;
+    font-weight: 400;
+    font-size: 180px;
+    color:#E9A429;
+}
+
+.catalog__text {
+    font-family:Onest, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #757A7A;
+    max-width: 545px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.catalog__body {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__actions {
+    margin-left: -40px;
+}
+
+.catalog__tab {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 334px;
+    gap: 15px;
+    font-family: Onest, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #272C2C;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 20px;
+}
+
+.catalog__tab:last-child {
+    margin-bottom: 0;
+}
+
+.catalog__tab.active, .catalog__tab:hover {
+    box-shadow: 0 0 18px 0 rgba(200, 194, 179, 0.4);
+    color: #E9A429;
+}
+
+.catalog__slider {
+    border: 1px solid #E9A429;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.catalog__slider-inner {
+    display: flex;
+    gap: 40px;
+}
+
+.catalog__slider-media {
+    max-width: 297px;
+    text-align: center;
+    font-family: Onest, sans-serif;
+
+}
+
+.catalog__slider-image-roster-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #E9A429;
+    margin-bottom: 6px;
+}
+
+.catalog__slider-image-roster {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: #272C2C;
+}
+
+.catalog__slider-content {
+    max-width: 499px;
+    text-align: start;
+}
+
+.catalog__slider-content-title {
+    font-family: Onest, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #131919;
+    margin-bottom: 4px;
+}
+
+.catalog__slider-content-text {
+    font-family: Onest, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #757A7A;
+    margin-bottom: 20px;
+}
+
+.catalog__slider-content-nutrition {
+    font-family: Onest, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:#E9A429;
+    margin-bottom: 6px;
+}
+
+.catalog__slider-content-items {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.catalog__slider-content-item:not(:last-child) {
+    margin-right: 40px;
+    font-family: Onest, sans-serif;
+    font-weight: 400;
+}
+
+.catalog__slider-content-item-title {
+    font-size: 13px;
+    color: #757A7A;
+}
+
+.catalog__slider-content-item-value {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #131919;
+}
+
+.catalog__slider-content-conditionals {
+    margin-bottom: 99px;
+}
+
+.catalog__slider-content-conditionals-title {
+    font-family: Onest, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E79B12;
+    margin-bottom: 6px;
+}
+
+.catalog__slider-content-conditionals-text {
+    font-family: Onest, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #272C2C;
+}
+
+.catalog__slider-content-button button {
+    background-color: #00CEBD;
+    color: white;
+}
+
+.catalog__slider-content-button button:hover {
+    background-color: white;
+    color: #00CEBD;
+}
+
+.catalog__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.catalog__arrow {
+    border-radius: 50%;
+    border: 1px solid #00CEBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.catalog__arrow:hover {
+    background-color: #00CEBD;
+}
+
+.catalog__arrow svg path {
+    transition: all .3s;
+}
+
+.catalog__arrow:hover svg path {
+    fill: white;
 }

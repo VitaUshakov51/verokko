@@ -2,44 +2,40 @@
     font-family: "Onest";
     font-style: normal;
     font-weight: 700;
-    src: local("Onest");
-    url("../fonts/Onest-Bold.ttf") format("ttf");
-    url("../fonts/Onest-Bold.eot") format("eot");
-    url("../fonts/Onest-Bold.woff") format("woff");
-    url("../fonts/Onest-Bold.woff2") format("woff2");
+    src: url("../fonts/Onest-Bold.eot"), /* IE9 Compat Modes */
+    url("../fonts/Onest-Bold.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Onest-Bold.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Onest-Bold.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
-
 @font-face {
     font-family: "Onest";
     font-style: normal;
     font-weight: 600;
-    src: local("Onest");
-    url("../fonts/Onest-SemiBold.ttf") format("ttf"),
-    url("../fonts/Onest-SemiBold.eot") format("eot"),
-    url("../fonts/Onest-SemiBold.woff") format("woff"),
-    url("../fonts/Onest-SemiBold.woff2") format("woff2");
+    src: url("../fonts/Onest-SemiBold.eot"), /* IE9 Compat Modes */
+    url("../fonts/Onest-SemiBold.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Onest-SemiBold.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Onest-SemiBold.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 @font-face {
     font-family: "Onest";
     font-style: normal;
     font-weight: 500;
-    src: local("Onest"),
-    url("../fonts/Onest-Medium.ttf") format("ttf"),
-    url("../fonts/Onest-Medium.eot") format("eot"),
-    url("../fonts/Onest-Medium.woff") format("woff"),
-    url("../fonts/Onest-Medium.woff2") format("woff2");
+    src: url("../fonts/Onest-Medium.eot"), /* IE9 Compat Modes */
+    url("../fonts/Onest-Medium.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Onest-Medium.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Onest-Medium.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: "Onest";
     font-style: normal;
     font-weight: 400;
-    src: local("Onest"),
-    url("../fonts/Onest-Regular.ttf") format("ttf"),
-    url("../fonts/Onest-Regular.eot") format("eot"),
-    url("../fonts/Onest-Regular.woff") format("woff"),
-    url("../fonts/Onest-Regular.woff2") format("woff2");
+    src: url("../fonts/Onest-Regular.eot"), /* IE9 Compat Modes */
+    url("../fonts/Onest-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Onest-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Onest-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
 }
+
 @font-face {
     font-family: "Ouvality";
     font-style: normal;
