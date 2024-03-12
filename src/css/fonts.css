@@ -40,8 +40,8 @@
     font-family: "Ouvality";
     font-style: normal;
     src: local("Ouvality"),
-    url("../fonts/Ouvality.ttf") format("ttf"),
-    url("../fonts/Ouvality.eot") format("eot"),
+    url("../fonts/Ouvality.eot"),
     url("../fonts/Ouvality.woff") format("woff"),
-    url("../fonts/Ouvality.woff2") format("woff2");
+    url("../fonts/Ouvality.woff2") format("woff2"),
+    url("../fonts/Ouvality.ttf") format("ttf");
 }
