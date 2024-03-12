@@ -1,12 +1,12 @@
-html{
+html {
 
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-body
-{
+body {
+    font-family: Onest, sans-serif;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -424,7 +424,7 @@ body.noScroll {
 
 .catalog__sub-title {
     position: relative;
-    font-family:Onest, sans-serif;
+    font-family: Onest, sans-serif;
     font-weight: 700;
     font-size: 36px;
     color: #131919;
@@ -436,11 +436,11 @@ body.noScroll {
     font-family: Ouvality, sans-serif;
     font-weight: 400;
     font-size: 180px;
-    color:#E9A429;
+    color: #E9A429;
 }
 
 .catalog__text {
-    font-family:Onest, sans-serif;
+    font-family: Onest, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -504,7 +504,16 @@ body.noScroll {
 
 }
 
-.catalog__slider-image-roster-title {
+.catalog__slider-image {
+    max-width: 297px;
+}
+
+.catalog__slider-image img {
+    width: 100%;
+}
+
+.catalog__slider-image-roster-title, .catalog__slider-image-roster-title-mobile {
+    font-family: Onest, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
@@ -512,7 +521,8 @@ body.noScroll {
     margin-bottom: 6px;
 }
 
-.catalog__slider-image-roster {
+.catalog__slider-image-roster, .catalog__slider-image-roster-mobile {
+    font-family: Onest, sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 140%;
@@ -524,7 +534,11 @@ body.noScroll {
     text-align: start;
 }
 
-.catalog__slider-content-title {
+.catalog__slider-mobile-head {
+    display: none;
+}
+
+.catalog__slider-content-title, .catalog__slider-content-title-mobile {
     font-family: Onest, sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -532,7 +546,8 @@ body.noScroll {
     margin-bottom: 4px;
 }
 
-.catalog__slider-content-text {
+
+.catalog__slider-content-text, .catalog__slider-content-text-mobile {
     font-family: Onest, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -540,17 +555,22 @@ body.noScroll {
     margin-bottom: 20px;
 }
 
-.catalog__slider-content-nutrition {
+.catalog__slider-content-nutrition, .catalog__slider-content-nutrition-mobile {
     font-family: Onest, sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color:#E9A429;
+    color: #E9A429;
     margin-bottom: 6px;
 }
 
-.catalog__slider-content-items {
+.catalog__slider-content-items, .catalog__slider-content-items-mobile {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
+}
+
+.catalog__slider-nutrition-small-mobile {
+    display: none;
 }
 
 .catalog__slider-content-item:not(:last-child) {
@@ -589,7 +609,11 @@ body.noScroll {
     color: #272C2C;
 }
 
-.catalog__slider-content-button button {
+.catalog__slider-mobile-roster {
+    display: none;
+}
+
+.catalog__slider-content-button button, .catalog__slider-content-button-mobile button {
     background-color: #00CEBD;
     color: white;
 }
@@ -629,3 +653,206 @@ body.noScroll {
 .catalog__arrow:hover svg path {
     fill: white;
 }
+
+@media (max-width: 1145px) {
+    .catalog__head {
+        display: block;
+    }
+
+    .catalog__sub-title {
+        margin-bottom: -5%;
+    }
+
+    .catalog__text {
+        max-width: inherit;
+    }
+
+    .catalog__body {
+        display: block;
+    }
+
+    .catalog__actions {
+        display: flex;
+        overflow-x: scroll;
+        gap: 10px;
+        margin-left: 0;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .catalog__tab {
+        flex-direction: column;
+        max-width: inherit;
+        gap: 10px;
+        border-radius: 20px;
+    }
+
+    .catalog__tab-name {
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        padding: 120px 0 60px 0;
+    }
+
+    .catalog__title {
+        font-size: 120px;
+    }
+
+    .catalog__text {
+        max-width: 545px;
+    }
+
+    .catalog__slider-content-title {
+        display: none;
+    }
+
+    .catalog__slider-content-text {
+        display: none;
+    }
+
+    .catalog__slider-content-button {
+        display: none;
+    }
+
+    .catalog__slider-image-text {
+        display: none;
+    }
+
+    .catalog__slider-content-conditionals {
+        margin-bottom: 0;
+    }
+
+    .catalog__slider-mobile-head {
+        display: block;
+    }
+
+    .catalog__slider-content-title-mobile {
+        margin-bottom: 6px;
+    }
+
+    .catalog__slider-inner {
+        gap: 20px;
+    }
+
+    .catalog__slider-content-items {
+        flex-wrap: wrap;
+        max-width: 200px;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+
+    .catalog__slider-content-item:last-child {
+        margin-right: 7px;
+    }
+
+    .catalog__slider-mobile-roster {
+        display: block;
+    }
+
+    .catalog__slider-content-button-mobile {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .catalog {
+        padding: 80px 0 60px 0;
+    }
+
+    .catalog__sub-title {
+        font-size: 28px;
+    }
+
+    .catalog__title {
+        font-size: 90px;
+    }
+
+    .catalog__tab-name {
+        font-size: 16px;
+    }
+
+
+    .catalog__slider-content {
+        display: none;
+    }
+
+    .catalog__slider-image-text {
+        display: block;
+    }
+
+    .catalog__slider-media {
+        max-width: inherit;
+        text-align: inherit;
+    }
+
+    .catalog__slider-image-roster-title-mobile, .catalog__slider-image-roster-mobile {
+        display: none;
+    }
+
+    .catalog__slider-inner {
+        flex-direction: column;
+    }
+
+
+    .catalog__slider-nutrition-small-mobile {
+        display: block;
+    }
+
+    .catalog__slider-content-items-mobile {
+        row-gap: 10px;
+    }
+
+}
+
+.about {
+    padding: 182px 0 120px 0;
+}
+
+.about__grid {
+    display: grid;
+    gap: 13px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "image div1 div2"
+    "image div3 div4"
+    "div5 div6 image2"
+    "div7 div8 image2";
+}
+
+.div1 {
+    grid-area: div1;
+}
+.div2 {
+    grid-area: div2;
+}
+.div3 {
+    grid-area: div3;
+}
+.div4 {
+    grid-area: div4;
+}
+.div5 {
+    grid-area: div5;
+}
+.div6 {
+    grid-area: div6;
+}
+.div7 {
+    grid-area: div7;
+}
+.div8 {
+    grid-area: div8;
+}
+
+.image {
+    grid-area: image;
+}
+.image2 {
+    grid-area: image2;
+}
+
