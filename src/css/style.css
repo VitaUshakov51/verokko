@@ -5,6 +5,13 @@ html {
     overflow-x: hidden;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 body {
     font-family: Onest, sans-serif;
     width: 100%;
@@ -923,6 +930,12 @@ body.noScroll {
     grid-area: image;
 }
 
+.about__item image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .image2 {
     display: flex;
@@ -997,11 +1010,15 @@ body.noScroll {
     .image img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
     }
 
     .image2 img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
     }
 }
 
@@ -1294,7 +1311,7 @@ body.noScroll {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 120px;
-    padding-bottom: 160px;
+    padding-bottom: 230px;
 }
 
 
@@ -1389,15 +1406,129 @@ body.noScroll {
 @media (max-width: 500px) {
     .contacts {
         padding-top: 80px;
-        padding-bottom: 175px;
+        padding-bottom: 220px;
         background-image: url("../images/contact-bg-376.png");
     }
 }
 
 
 
+/*===================send===============*/
+.send {
+    margin-top: -100px;
+    margin-bottom: -146px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url("../images/send-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px  #fff;
+}
+
+.send__title {
+    font-family:Onest, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #ffffff;
+    max-width: 545px;
+    margin-bottom: 20px;
+}
+
+.send__text {
+    font-family: Onest, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 538px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.send__form-inputs {
+    display: flex;
+    max-width: 813px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.send__input:last-child {
+    width: 540px;
+}
+
+.send__input:last-child input {
+    width: 100%;
+}
+
+.send__form-inputs input {
+    width: 255px;
+    border: 1px solid #A0F6EF;
+}
+
+.send__form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.send__form-checkbox-text {
+    font-family: Onest, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.send__form-checkbox-text span {
+    text-decoration: underline;
+}
+
+.send__btn {
+    background-color: #fff;
+    color: #00CEBD;
+}
+
+
+@media (max-width: 1890px) {
+    .send {
+        margin-top: -100px;
+        margin-bottom: -160px;
+    }
+}
+
+@media (max-width: 873px) {
+    .send {
+        margin-bottom: -170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .send {
+        background-image: url("../images/send-768.png");
+        margin-top: -118px;
+    }
+}
+
+
+@media (max-width: 587px) {
+    .send__input {
+        width: 100%;
+    }
+    .send__input input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 397px) {
+    .send {
+        background-image: url("../images/send-mob.png");
+    }
+}
 
 .footer {
+
     background-color:  #11afa1;
     padding: 40px 0;
 }
