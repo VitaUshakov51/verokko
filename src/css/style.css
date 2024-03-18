@@ -368,6 +368,12 @@ body.noScroll {
     }
 }
 
+@media (max-width: 829px) {
+    .hero__halal {
+        margin-top: 53%;
+    }
+}
+
 @media (max-width: 699px) {
     .burger {
         margin-right: 0;
@@ -383,6 +389,10 @@ body.noScroll {
 
     .hero__bears {
         bottom: -110px;
+    }
+
+    .hero__halal {
+        margin-top: 209px;
     }
 }
 
