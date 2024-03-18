@@ -1,5 +1,8 @@
-html {
+html, * {
+    scroll-behavior: smooth;
+}
 
+html {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -60,7 +63,13 @@ body.noScroll {
 .container {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 0 20px;
+}
+
+@media (max-width: 1299px) {
+   .container {
+       padding: 0 20px;
+   }
+
 }
 
 .btn {
@@ -160,6 +169,7 @@ body.noScroll {
 .header__nav-list {
     display: flex;
     align-items: center;
+    margin-top: 5%;
 }
 
 .header__nav-item {
@@ -168,11 +178,38 @@ body.noScroll {
     font-weight: 400;
     font-size: 16px;
     color: #757A7A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+
+.header__nav-item:hover {
+    color: #00CEBD;
+}
+
+.header__nav-item:hover .header__nav-link-decor {
+    opacity: 1;
+}
+
+.header__nav-link-decor {
+    transition: all .3s;
+    opacity: 0;
+    width: 100%;
+
+}
+.header__nav-link-decor svg {
+    width: 100%;
 }
 
 .header__nav-item:last-child {
     margin-right: 0;
 }
+
 
 .header__right {
     width: 100%;
@@ -379,6 +416,11 @@ body.noScroll {
         margin-right: 0;
     }
 
+    .hero__content {
+        max-width: inherit;
+        width: 100%;
+    }
+
     .hero__body {
         flex-direction: column;
     }
@@ -393,6 +435,10 @@ body.noScroll {
 
     .hero__halal {
         margin-top: 209px;
+    }
+
+    .hero__button {
+        width: 100%;
     }
 }
 
@@ -670,7 +716,7 @@ body.noScroll {
     display: none;
 }
 
-.catalog__slider-content-button button, .catalog__slider-content-button-mobile button {
+.catalog__slider-content-button a, .catalog__slider-content-button-mobile a {
     background-color: #00CEBD;
     color: white;
 }
@@ -1137,7 +1183,7 @@ body.noScroll {
     }
 
     .form-mini {
-        padding: 80px 0px 166px 0;
+        padding: 80px 0px 283px 0;
         background-image: url("../images/small-form-mob.png");
     }
 
@@ -1148,7 +1194,7 @@ body.noScroll {
 
 @media (max-width: 500px) {
     .form-mini {
-        padding: 80px 0px 183px 0;
+        padding: 80px 0px 300px 0;
         background-image: url("../images/smal-form-litle.png");
     }
 
@@ -1501,10 +1547,16 @@ body.noScroll {
 }
 
 
-@media (max-width: 1890px) {
+@media (max-width: 1920px) {
     .send {
         margin-top: -100px;
-        margin-bottom: -160px;
+        margin-bottom: -163px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .send {
+        background-position-x: 65% ;
     }
 }
 
@@ -1518,6 +1570,7 @@ body.noScroll {
     .send {
         background-image: url("../images/send-768.png");
         margin-top: -118px;
+        background-position: center;
     }
 }
 

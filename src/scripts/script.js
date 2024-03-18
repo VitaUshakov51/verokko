@@ -1,5 +1,6 @@
 (function () {
 
+    // Товары
     const productCategoryOne = [
         {
             title: 'Мармелад жевательный «Фруктово-ягодный микс',
@@ -274,6 +275,7 @@
     ]
 
 
+
     const myTabs = document.querySelectorAll('.catalog__tab');
     const content= document.getElementById('content');
     myTabs.forEach(tab => {
@@ -380,7 +382,7 @@
                                         </div>
                                     </div>
                                     <div class="catalog__slider-content-button">
-                                        <button class=" btn">Запросить оптовый прайс</button>
+                                        <a href="#send" class=" btn">Запросить оптовый прайс</a>
                                     </div>
                                 </div>`
             const catalogSliderMobileRoster = document.createElement('div');
@@ -388,7 +390,7 @@
             catalogSliderMobileRoster.innerHTML = `<div class="catalog__slider-image-roster-title-mobile">Состав:</div>
                                 <div class="catalog__slider-image-roster-mobile" id="productRosterMobile">${product.roster}</div>
                                 <div class="catalog__slider-content-button-mobile">
-                                    <button class=" btn">Запросить оптовый прайс</button>
+                                    <a href="#send" class="btn">Запросить оптовый прайс</a>
                                 </div>`
             slide.appendChild(catalogSliderMobileHead);
             slide.appendChild(catalogSliderInner);
@@ -504,7 +506,7 @@
                                         </div>
                                     </div>
                                     <div class="catalog__slider-content-button">
-                                        <button class=" btn">Запросить оптовый прайс</button>
+                                        <a href="#send" class=" btn">Запросить оптовый прайс</a>
                                     </div>
                                 </div>`
             const catalogSliderMobileRoster = document.createElement('div');
@@ -533,8 +535,21 @@
         menu.classList.toggle('active')
         shadow.classList.toggle('show')
         body.classList.toggle('noScroll')
+        clickLinks();
     })
 
+    const links = document.querySelectorAll('.header__nav-link');
+
+    function clickLinks(){
+        links.forEach(item => {
+            item.addEventListener('click', () => {
+                burger.classList.remove('active');
+                menu.classList.remove('active')
+                shadow.classList.remove('show')
+                body.classList.remove('noScroll')
+            })
+        })
+    }
 
 
 
