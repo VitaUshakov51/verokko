@@ -66,9 +66,9 @@ body.noScroll {
 }
 
 @media (max-width: 1299px) {
-   .container {
-       padding: 0 20px;
-   }
+    .container {
+        padding: 0 20px;
+    }
 
 }
 
@@ -189,7 +189,6 @@ body.noScroll {
 }
 
 
-
 .header__nav-item:hover {
     color: #00CEBD;
 }
@@ -204,6 +203,7 @@ body.noScroll {
     width: 100%;
 
 }
+
 .header__nav-link-decor svg {
     width: 100%;
 }
@@ -567,6 +567,7 @@ body.noScroll {
     box-shadow: 0 0 18px 0 rgba(200, 194, 179, 0.4);
     color: #E9A429;
 }
+
 .catalog__products {
     overflow: hidden;
 
@@ -581,10 +582,12 @@ body.noScroll {
 .slick-list {
     overflow: hidden;
 }
+
 .slick-slide {
     transition: all .3s;
     opacity: 0;
 }
+
 .slick-slide.slick-active {
     opacity: 1;
     transition: all .3s;
@@ -758,7 +761,6 @@ body.noScroll {
 .catalog__arrow:hover svg path {
     fill: white;
 }
-
 
 
 @media (max-width: 1261px) {
@@ -940,8 +942,8 @@ body.noScroll {
     display: grid;
     column-gap: 13px;
     row-gap: 40px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
     grid-template-areas:
     "image div1 div2"
     "image div3 div4"
@@ -1030,7 +1032,7 @@ body.noScroll {
 @media (max-width: 1200px) {
     .about__grid {
         row-gap: 20px;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 200px);
         grid-template-areas:
     "image div1"
@@ -1053,8 +1055,8 @@ body.noScroll {
     }
 
     .about__grid {
-        grid-template-columns: repeat(2,minmax(335px ,1fr));
-        grid-template-rows: repeat(6,minmax(200px, 1fr));
+        grid-template-columns: repeat(2, minmax(335px, 1fr));
+        grid-template-rows: repeat(6, minmax(200px, 1fr));
     }
 
     .title {
@@ -1085,6 +1087,7 @@ body.noScroll {
         row-gap: 5px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 200px);
+        align-items: center;
         grid-template-areas:
     "image"
     "image"
@@ -1099,6 +1102,7 @@ body.noScroll {
     "image2"
     "image2";
     }
+
     .image img, .image2 img {
         width: inherit;
     }
@@ -1107,8 +1111,22 @@ body.noScroll {
 
 @media (max-width: 500px) {
     .about__grid {
-        grid-template-rows: repeat(12, 1fr);
+        row-gap: 20px;
+        grid-template-rows: repeat(10, 0.5fr);
+        align-items: center;
+        grid-template-areas:
+    "image"
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "div5"
+    "div6"
+    "div7"
+    "div8"
+    "image2"
     }
+
     .image img, .image2 img {
         width: 100%;
     }
@@ -1167,7 +1185,7 @@ body.noScroll {
 }
 
 .form-mini__button:hover {
-    border-color: #fff ;
+    border-color: #fff;
     background-color: #00CEBD;
     color: #fff;
 }
@@ -1373,7 +1391,7 @@ body.noScroll {
 }
 
 
-.contacts__sub-title  {
+.contacts__sub-title {
     margin-bottom: -4%;
     position: relative;
     z-index: 2;
@@ -1421,12 +1439,13 @@ body.noScroll {
 }
 
 .contacts__info-title {
-    font-family:Onest, sans-serif;
+    font-family: Onest, sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #E9A429;
     margin-bottom: 10px;
 }
+
 .contacts__info-text {
     font-family: Onest, sans-serif;
     font-weight: 400;
@@ -1470,7 +1489,6 @@ body.noScroll {
 }
 
 
-
 /*===================send===============*/
 .send {
     margin-top: -100px;
@@ -1481,11 +1499,11 @@ body.noScroll {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 2px  #fff;
+    border-bottom: 2px #fff;
 }
 
 .send__title {
-    font-family:Onest, sans-serif;
+    font-family: Onest, sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
@@ -1558,7 +1576,7 @@ body.noScroll {
 
 @media (max-width: 1000px) {
     .send {
-        background-position-x: 65% ;
+        background-position-x: 65%;
     }
 }
 
@@ -1581,6 +1599,7 @@ body.noScroll {
     .send__input {
         width: 100%;
     }
+
     .send__input input {
         width: 100%;
     }
@@ -1594,7 +1613,7 @@ body.noScroll {
 
 .footer {
 
-    background-color:  #11afa1;
+    background-color: #11afa1;
     padding: 40px 0;
 }
 
@@ -1610,6 +1629,7 @@ body.noScroll {
     font-size: 13px;
     color: #fff;
 }
+
 .footer__text p {
     margin-bottom: 5px;
 }

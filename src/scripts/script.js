@@ -427,7 +427,7 @@
 
     }
     function showFirstSlider(){
-        myTabs[4].classList.add('active');
+        myTabs[0].classList.add('active');
         productCategoryFive.forEach(product => {
             const slide = document.createElement('div');
             slide.className = 'catalog__slider';
