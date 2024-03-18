@@ -79,6 +79,8 @@ body.noScroll {
     font-weight: 600;
     font-size: 16px;
     transition: all .3s;
+    display: inline-block;
+    text-align: center;
 }
 
 .hero {

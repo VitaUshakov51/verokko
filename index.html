@@ -406,22 +406,22 @@
         <div class="container">
             <div class="send__title">Остались вопросы? Мы с радостью вам поможем!</div>
             <div class="send__text">Заполните поля ниже, и наш менеджер свяжется с вами в ближайшее время.</div>
-            <form class="send__form">
+            <form action="sender.php" method="post" class="send__form">
                 <div class="send__form-inputs">
                     <div class="send__input">
-                        <input type="text" class="input" placeholder="Имя">
+                        <input type="text" id="name" name="name" class="input" placeholder="Имя">
                     </div>
                     <div class="send__input">
-                        <input type="number" class="input" placeholder="Телефон">
+                        <input type="number" id="phone" name="phone" class="input" placeholder="Телефон">
                     </div>
                     <div class="send__input">
-                        <input type="email" class="input" placeholder="E-mail">
+                        <input type="email" id="email" name="email" class="input" placeholder="E-mail">
                     </div>
                     <div class="send__input">
-                        <input type="text" class="input" placeholder="Город">
+                        <input type="text" id="city" name="city" class="input" placeholder="Город">
                     </div>
                     <div class="send__input">
-                        <input type="text" class="input input-comment" placeholder="Комментарий">
+                        <input type="text" id="comment" name="comment" class="input input-comment" placeholder="Комментарий">
                     </div>
                 </div>
                 <div class="send__form-checkbox">
@@ -433,7 +433,7 @@
                     <div class="send__form-checkbox-text">Нажимая на кнопку, вы соглашаетесь с <span>политикой конфиденциальности</span></div>
                 </div>
                 <div class="send__button">
-                    <button class="send__btn btn">Запросить оптовый прайс</button>
+                    <button id="sendFormBtn" class="send__btn btn">Запросить оптовый прайс</button>
                 </div>
             </form>
         </div>

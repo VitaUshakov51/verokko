@@ -514,7 +514,7 @@
             catalogSliderMobileRoster.innerHTML = `<div class="catalog__slider-image-roster-title-mobile">Состав:</div>
                                 <div class="catalog__slider-image-roster-mobile" id="productRosterMobile">${product.roster}</div>
                                 <div class="catalog__slider-content-button-mobile">
-                                    <button class=" btn">Запросить оптовый прайс</button>
+                                    <a href="#send" class=" btn">Запросить оптовый прайс</a>
                                 </div>`
             slide.appendChild(catalogSliderMobileHead);
             slide.appendChild(catalogSliderInner);
@@ -552,6 +552,35 @@
     }
 
 
+
+    const sendFormBtn = document.getElementById('sendFormBtn')
+    sendFormBtn.addEventListener('click', () => {
+        const form = $(this).closest('form');
+        const actUrl = form.attr('action');
+        $.ajax({
+            url: actUrl,
+            type: 'post',
+            dataType: 'html',
+            data: form.serialize(),
+            success: function(data) {
+                // sessionStorage.setItem('sendForm', 'true');
+                // message.style.opacity = '1';
+                // inputElements.forEach(input => {
+                //     input.value = '';
+                //     submitButton.disabled = true;
+                // })
+                alert('Сообщение отправлено')
+
+            },
+            error:	 function() {
+                alert('Ошибка, обновите страницу')
+                // message.style.opacity = '1';
+                // message.style.background = 'rgba(255,0,6,0.58)'
+                // message.innerText = 'Ошибка( Обновите страницу и попробуйте еще раз';
+            }
+        });
+
+    })
 
 
 })()
