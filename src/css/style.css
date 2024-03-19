@@ -703,6 +703,7 @@ body.noScroll {
 }
 
 .catalog__slider-image {
+    overflow: hidden;
     max-width: 297px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -714,8 +715,7 @@ body.noScroll {
 }
 
 .catalog__slider-image img {
-    width: 200px;
-    height: 100%;
+    height: 210px;
 }
 
 .catalog__slider-image-roster-title, .catalog__slider-image-roster-title-mobile {

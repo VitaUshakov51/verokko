@@ -12,9 +12,18 @@
             kkal: '300 ккал / 1270 кДЖ',
         },
         {
+            title: 'Мармелад жевательный Червячки «КОЛА»',
+            image: 'marmelad_1-6.jpg',
+            roster: 'Cироп глюкозный, сахар, патока,  желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота,  ароматизатор сокосодержащий кола.',
+            protein: 0.4,
+            fat: 0.1,
+            carb: 73,
+            kkal: '300 ккал / 1270 кДЖ',
+        },
+        {
             title: 'Мармелад жевательный «ЧЕРВЯЧКИ» ',
             image: 'marmelad_1-2.png',
-            roster: ' сироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, ароматизаторы сокосодержащие (груша, ежевика, клубника, малина, лимон, апельсин, яблоко), соки концентрированные, глазирователи карнаубский воск, растительное масло.',
+            roster: 'Cироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, ароматизаторы сокосодержащие (груша, ежевика, клубника, малина, лимон, апельсин, яблоко), соки концентрированные, глазирователи карнаубский воск, растительное масло.',
             protein: 0.4,
             fat: 0.1,
             carb: 73,
@@ -51,19 +60,20 @@
 
     ]
     const productCategoryTwo = [
+
         {
-            title: 'Мармелад жевательный «КУБИКИ» ассорти в сахарной обсыпке',
-            image: 'marmelad_2_1.png',
-            roster: 'Cироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, ароматизаторы сокосодержащие- клубника, арбуз, дыня, банан, сливки соки концентрированные клубника, арбуз, банан гидрализованный молочный белок.',
+            title: 'Мармелад жевательный «Червячки» в кислой обсыпке',
+            image: 'marmelad_2-2.png',
+            roster: 'Cахар, патока, желеобразователь желатин (говяжий), вода питьевая, регулятор кислотности-лимонная кислота, концентрированный соки (абрикос, киви, брусника, малина, лимон, апельсин, яблоко), глазирователь карнаубский воск, растительное масло.',
             protein: 0.4,
             fat: 0.1,
             carb: 73,
             kkal: '300 ккал / 1270 кДЖ',
         },
         {
-            title: 'Мармелад жевательный «Червячки» в кислой обсыпке',
-            image: 'marmelad_2-2.png',
-            roster: 'Cахар, патока, желеобразователь желатин (говяжий), вода питьевая, регулятор кислотности-лимонная кислота, концентрированный соки (абрикос, киви, брусника, малина, лимон, апельсин, яблоко), глазирователь карнаубский воск, растительное масло.',
+            title: 'Мармелад жевательный «КУБИКИ» ассорти в сахарной обсыпке',
+            image: 'marmelad_2_1.png',
+            roster: 'Cироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, ароматизаторы сокосодержащие- клубника, арбуз, дыня, банан, сливки соки концентрированные клубника, арбуз, банан гидрализованный молочный белок.',
             protein: 0.4,
             fat: 0.1,
             carb: 73,
@@ -80,19 +90,20 @@
         },
     ]
     const productCategoryThree = [
+
         {
-            title: 'Мармелад жевательный «МОРЕ» сливочно-фруктовый',
-            image: 'marmelad_3-1.png',
-            roster: 'Cироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, ароматизаторы сокосодержащие (малина, клубника, банан, черника, лимон, яблоко, абрикос, дыня, персик ), гидрализованый молочный белок, глазирователи карнаубский воск, растительное масло.',
+            title: ' Мармелад жевательный «ЧЕРВЯЧКИ» сливочно-фруктовые',
+            image: 'marmelad_3-2.png',
+            roster: 'Сироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, концентрированные соки (малина, клубника, банан, черника, лимон, яблоко, абрикос, персик ), гидрализованный молочный белок, глазирователи карнаубский воск, растительное масло.',
             protein: 0.4,
             fat: 0.1,
             carb: 73,
             kkal: '300 ккал / 1270 кДЖ',
         },
         {
-            title: ' Мармелад жевательный «ЧЕРВЯЧКИ» сливочно-фруктовые',
-            image: 'marmelad_3-2.png',
-            roster: 'Сироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, концентрированные соки (малина, клубника, банан, черника, лимон, яблоко, абрикос, персик ), гидрализованный молочный белок, глазирователи карнаубский воск, растительное масло.',
+            title: 'Мармелад жевательный «МОРЕ» сливочно-фруктовый',
+            image: 'marmelad_3-1.png',
+            roster: 'Cироп глюкозный, сахар, патока, желеобразователь желатин (говяжий),вода питьевая, регулятор кислотности-лимонная кислота, ароматизаторы сокосодержащие (малина, клубника, банан, черника, лимон, яблоко, абрикос, дыня, персик ), гидрализованый молочный белок, глазирователи карнаубский воск, растительное масло.',
             protein: 0.4,
             fat: 0.1,
             carb: 73,
@@ -276,33 +287,32 @@
     ]
 
 
-
     const myTabs = document.querySelectorAll('.catalog__tab');
-    const content= document.getElementById('content');
+    const content = document.getElementById('content');
     myTabs.forEach(tab => {
         tab.addEventListener('click', () => {
             clearSlider();
             tab.classList.add('active');
-            if (tab.getAttribute('id')=== 'oneCategory') {
+            if (tab.getAttribute('id') === 'oneCategory') {
                 getProducts(productCategoryOne);
             }
-            if (tab.getAttribute('id')=== 'twoCategory') {
+            if (tab.getAttribute('id') === 'twoCategory') {
                 getProducts(productCategoryTwo);
             }
-            if (tab.getAttribute('id')=== 'threeCategory') {
+            if (tab.getAttribute('id') === 'threeCategory') {
                 getProducts(productCategoryThree);
             }
-            if (tab.getAttribute('id')=== 'fourCategory') {
+            if (tab.getAttribute('id') === 'fourCategory') {
                 getProducts(productCategoryFour);
             }
-            if (tab.getAttribute('id')=== 'fiveCategory') {
+            if (tab.getAttribute('id') === 'fiveCategory') {
                 getProducts(productCategoryFive);
             }
 
         })
     })
 
-    function getProducts(categoryList){
+    function getProducts(categoryList) {
         $('.catalog__data-content').slick('unslick');
         content.innerHTML = '';
         categoryList.forEach(product => {
@@ -401,7 +411,7 @@
         slickSliderInit()
     }
 
-    function slickSliderInit(){
+    function slickSliderInit() {
         $('.catalog__data-content').slick({
             infinite: true,
             centerMode: true,
@@ -409,7 +419,7 @@
             slidesToShow: 1,
             focusOnSelect: true,
             arrows: false,
-            adaptiveHeight:true
+            adaptiveHeight: true
         });
 
         $('.catalog__arrow-prev').on('click', function (e) {
@@ -421,13 +431,15 @@
             $('.catalog__data-content').slick('slickNext')
         })
     }
+
     function clearSlider() {
         myTabs.forEach(tab => {
             tab.classList.remove('active');
         })
 
     }
-    function showFirstSlider(){
+
+    function showFirstSlider() {
         myTabs[0].classList.add('active');
         productCategoryFive.forEach(product => {
             const slide = document.createElement('div');
@@ -524,6 +536,7 @@
         })
         slickSliderInit();
     }
+
     showFirstSlider();
 
 
@@ -541,7 +554,7 @@
 
     const links = document.querySelectorAll('.header__nav-link');
 
-    function clickLinks(){
+    function clickLinks() {
         links.forEach(item => {
             item.addEventListener('click', () => {
                 burger.classList.remove('active');
@@ -553,7 +566,6 @@
     }
 
 
-
     const sendFormBtn = document.getElementById('sendFormBtn')
     sendFormBtn.addEventListener('click', () => {
         const form = $(this).closest('form');
@@ -563,7 +575,7 @@
             type: 'post',
             dataType: 'html',
             data: form.serialize(),
-            success: function(data) {
+            success: function (data) {
                 // sessionStorage.setItem('sendForm', 'true');
                 // message.style.opacity = '1';
                 // inputElements.forEach(input => {
@@ -573,7 +585,7 @@
                 alert('Сообщение отправлено')
 
             },
-            error:	 function() {
+            error: function () {
                 alert('Ошибка, обновите страницу')
                 // message.style.opacity = '1';
                 // message.style.background = 'rgba(255,0,6,0.58)'
