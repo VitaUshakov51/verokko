@@ -6,10 +6,10 @@
     $email = $_POST['city'];
     $email = $_POST['comment'];
 
-	$to = "dolchetti@mail.ru";
+	$to = "vitavita-98@yandex.ru";
 	$date = date ("d.m.Y");
 	$time = date ("h:i");
-	$from = "site@dolchetti.ru";
+	$from = "site@verokko.ru";
 	$subject = "Верокко - Заявка c сайта";
 
 
@@ -17,8 +17,8 @@
 	У вас новая заявка:
     Имя: $name
     Телефон: $phone
-    Почта: $email "
-    Город: $city "
+    Почта: $email
+    Город: $city
     Комментарий: $comment ";
 	mail($to, $subject, $msg, "From: $from ");
 

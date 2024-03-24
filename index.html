@@ -275,17 +275,17 @@
     <section class="form-mini">
         <div class="container">
             <div class="form-mini__title">Пришлем оптовые цены по вашему запросу</div>
-            <div class="form-mini__inner">
+            <form action="miniform.php" class="form-mini__inner">
                 <div class="form-mini__item">
-                    <input type="text" class="input" placeholder="Имя">
+                    <input type="text" id="firstName" name="firstName" class="input" placeholder="Имя">
                 </div>
                 <div class="form-mini__item">
-                    <input type="text" class="input" placeholder="Фамилия">
+                    <input type="text" id="yourPhone" name="yourPhone" class="input" placeholder="Телефон">
                 </div>
                 <div class="form-mini__item">
-                    <button class="form-mini__button btn">Запросить оптовый прайс</button>
+                    <button id="miniFormButton" type="submit" class="form-mini__button btn">Запросить оптовый прайс</button>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -433,7 +433,7 @@
                     <div class="send__form-checkbox-text">Нажимая на кнопку, вы соглашаетесь с <span>политикой конфиденциальности</span></div>
                 </div>
                 <div class="send__button">
-                    <button id="sendFormBtn" class="send__btn btn">Запросить оптовый прайс</button>
+                    <button id="sendFormBtn" type="submit" class="send__btn btn">Запросить оптовый прайс</button>
                 </div>
             </form>
         </div>
