@@ -3,8 +3,8 @@
     $name = $_POST['name'];
 	$phone = $_POST['phone'];
     $email = $_POST['email'];
-    $email = $_POST['city'];
-    $email = $_POST['comment'];
+    $city = $_POST['city'];
+    $comment = $_POST['comment'];
 
 	$to = "vitavita-98@yandex.ru";
 	$date = date ("d.m.Y");
@@ -14,7 +14,7 @@
 
 
 	$msg="
-	У вас новая заявка:
+	Вам новый вопрос по мармеладу:
     Имя: $name
     Телефон: $phone
     Почта: $email

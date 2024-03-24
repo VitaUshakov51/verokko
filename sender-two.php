@@ -1,7 +1,7 @@
 <?php
 
-    $name = $_POST['firstName'];
-	$phone = $_POST['yourPhone'];
+    $name = $_POST['nameForm'];
+	$phone = $_POST['phoneForm'];
 
 
 	$to = "vitavita-98@yandex.ru";
@@ -12,9 +12,9 @@
 
 
 	$msg="
-	У вас новая заявка на запрос оптового прайса:
+	У вас запрос оптового прайса:
     Имя: $name
-    Телефон: $phone";
+    Телефон: $phone ";
 	mail($to, $subject, $msg, "From: $from ");
 
 	header('Location:https://ya.ru');
