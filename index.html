@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="src/css/animate.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 
 
@@ -92,7 +93,7 @@
                 </a>
             </header>
             <div class="hero__body">
-                <div class="hero__content">
+                <div class="hero__content wow animate__backInLeft">
                     <div class="hero__pre-title subtitle">Компания</div>
                     <h1 class="hero__title">Верокко</h1>
                     <div class="hero__text">Здесь вы найдете большой ассортимент мармелада, который подойдет каждому
@@ -102,7 +103,7 @@
                         <a href="#send" class="hero__button btn">Запросить оптовый прайс</a>
                     </div>
                 </div>
-                <div class="hero__image">
+                <div class="hero__image wow animate__zoomIn" >
                     <img src="src/images/hero.png" alt="Мармелад">
                 </div>
             </div>
@@ -174,14 +175,13 @@
             </div>
         </div>
     </section>
-
     <section id="about" class="about">
         <div class="container">
             <div class="about__head">
                 <div class="about__sub-title subtitle">Мы — динамично развивающееся предприятие</div>
                 <div class="about__title title">О нас</div>
             </div>
-            <div class="about__grid">
+            <div class="about__grid" >
                 <div class="about__item image">
                     <img src="src/images/grid1.png" alt="фото">
                 </div>
@@ -271,7 +271,6 @@
             </div>
         </div>
     </section>
-
     <section class="form-mini">
         <div class="container">
             <div class="form-mini__title">Пришлем оптовые цены по вашему запросу</div>
@@ -288,7 +287,6 @@
             </form>
         </div>
     </section>
-
     <section id="partners" class="partners">
         <div class="container">
             <div class="partners__head">
@@ -366,7 +364,6 @@
             </div>
         </div>
     </section>
-
     <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__head">
@@ -401,7 +398,6 @@
             </div>
         </div>
     </section>
-
     <section id="send" class="send">
         <div class="container">
             <div class="send__title">Остались вопросы? Мы с радостью вам поможем!</div>
@@ -439,7 +435,6 @@
         </div>
 
     </section>
-
     <footer class="footer">
 
         <div class="container">
@@ -453,6 +448,7 @@
             </div>
         </div>
     </footer>
+    <div class="popUp" id="popUp">Заявка успешно отправлена!</div>
 </div>
 
 
@@ -462,6 +458,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="src/scripts/wow.min.js"></script>
 <script src="src/scripts/script.js"></script>
 </body>
 </html>

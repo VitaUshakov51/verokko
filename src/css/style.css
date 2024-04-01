@@ -2148,3 +2148,18 @@ body.noScroll {
         font-size: 90px;
     }
 }
+
+.popUp {
+    opacity: 0;
+    z-index: 20;
+    position: fixed;
+    right: calc(50% + -130px);
+    bottom: 3%;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid #E9A429;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}

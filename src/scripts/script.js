@@ -1,5 +1,10 @@
 (function () {
 
+    new WOW({
+            animateClass: 'animate__animated',
+        }
+    ).init();
+
     // Товары
     const productCategoryOne = [
         {
@@ -565,6 +570,28 @@
         })
     }
 
+    const popUp = document.getElementById('popUp');
+    const formMiniSend = sessionStorage.getItem('formMiniSend');
+    const formSend = sessionStorage.getItem('formSend');
+
+    if (formMiniSend) {
+        popUp.style.display = 'block';
+        popUp.style.opacity = '1';
+        setInterval(() => {
+            popUp.style.display = 'none';
+            popUp.style.opacity = '0';
+        }, 500);
+    }
+
+    if (formSend) {
+        popUp.style.display = 'block';
+        popUp.style.opacity = '1';
+        setInterval(() => {
+            popUp.style.display = 'none';
+            popUp.style.opacity = '0';
+        }, 500);
+    }
+
     const miniFormButton = document.getElementById('miniFormButton');
     miniFormButton.addEventListener('click', () => {
         const form = $(this).closest('form');
@@ -575,20 +602,22 @@
             dataType: 'html',
             data: form.serialize(),
             success: function (data) {
-                // sessionStorage.setItem('sendForm', 'true');
-                // message.style.opacity = '1';
-                // inputElements.forEach(input => {
-                //     input.value = '';
-                //     submitButton.disabled = true;
-                // })
-                alert('Сообщение отправлено')
-
+                popUp.style.display = 'block';
+                popUp.style.opacity = '1';
+                sessionStorage.setItem('formMiniSend', 'send');
+                setInterval(() => {
+                    popUp.style.display = 'none';
+                    popUp.style.opacity = '0';
+                }, 500);
             },
             error: function () {
-                alert('Ошибка, обновите страницу')
-                // message.style.opacity = '1';
-                // message.style.background = 'rgba(255,0,6,0.58)'
-                // message.innerText = 'Ошибка( Обновите страницу и попробуйте еще раз';
+                popUp.style.display = 'block';
+                popUp.style.opacity = '1';
+                popUp.textContent = 'Ошибка, попробуйте еще раз';
+                setInterval(() => {
+                    popUp.style.display = 'none';
+                    popUp.style.opacity = '0';
+                }, 500);
             }
         });
 
@@ -604,20 +633,23 @@
             dataType: 'html',
             data: form.serialize(),
             success: function (data) {
-                // sessionStorage.setItem('sendForm', 'true');
-                // message.style.opacity = '1';
-                // inputElements.forEach(input => {
-                //     input.value = '';
-                //     submitButton.disabled = true;
-                // })
-                alert('Сообщение отправлено')
+                popUp.style.display = 'block';
+                popUp.style.opacity = '1';
+                sessionStorage.setItem('formSend', 'send');
+                setInterval(() => {
+                    popUp.style.display = 'none';
+                    popUp.style.opacity = '0';
+                }, 500);
 
             },
             error: function () {
-                alert('Ошибка, обновите страницу')
-                // message.style.opacity = '1';
-                // message.style.background = 'rgba(255,0,6,0.58)'
-                // message.innerText = 'Ошибка( Обновите страницу и попробуйте еще раз';
+                popUp.style.display = 'block';
+                popUp.style.opacity = '1';
+                popUp.textContent = 'Ошибка, попробуйте еще раз';
+                setInterval(() => {
+                    popUp.style.display = 'none';
+                    popUp.style.opacity = '0';
+                }, 500);
             }
         });
 
